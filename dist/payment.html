@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Information | 3J's</title>
+
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Moirai+One&family=Nunito:ital,wght@0,300;0,500;1,400&family=Protest+Guerrilla&family=Protest+Riot&family=Rock+3D&display=swap"
+      rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <div class="navbar bg-gray-900 pb-2 flex flex-col md:flex-row items-center justify-between">
+    <nav class="m-10 mb-7">
+      <img class="w-16 cursor-pointer rounded-full hover:invert sepia md:filter-none" src="favicon.png" alt="...">
+    </nav>
+  
+    <div class="flex p-2 md:p-0 anta-regular">
+      <a href="dashboard.html" class="text-white font-normal mb-2 md:mb-0 px-5 py-2 hover:invert">Home</a>
+      <a href="products.html" class="text-white font-normal mb-2 md:mb-0 px-5 py-2 hover:invert">Products</a>
+      <a href="#contacts" class="text-white font-normal mb-2 md:mb-0 px-5 py-2 hover:invert">Contacts</a>
+      <a href="about.html" class="text-white font-normal mb-2 md:mb-0 px-5 py-2 hover:invert">About</a>
+      <a href="cart.html" class="text-white mb-2 md:mb-0 px-5 py-2 hover:invert"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="profile.html" class="text-white mb-2 md:mb-0 px-5 py-2 hover:invert"><i class="fas fa-user"></i></a>
+    </div>
+</div>
+
+  <div class="mt-8 px-4 md:px-0 md:pl-36 bg-white anta-regular inline-block">
+    <div class="mx-6 my-5 text-4xl">Profile</div>
+    <div class="flex flex-col md:flex-row items-center">
+    <a class="mx-auto md:mx-10 p-3.5 size-16 text-4xl border-2 border-black rounded-full" href="#!"><i class="fa-regular fa-user user"></i></a>
+      <div class="md:inline-block">
+        <p>Hello</p>
+        
+        <h4>[Full Name]</h4>
+      </div>
+    </div>
+    <div class="myMenu md:m-16 bg-slate-500 inline-flex">
+      <table class="w-full">
+        <tr> 
+          <td>
+            <a href="profile.html" class="text-black mx-2"><i class="fa-solid fa-user user"></i></a>
+            <a href="profile.html" class="mx-2">My Account</a>
+          </td>
+        </tr>
+
+        <tr>
+           <td>
+              <a href="orders.html" class="text-black mx-2"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="orders.html" class="mx-2">My Order</a>
+           </td> 
+        </tr>
+        <tr>
+            <td>
+              <a href="rating.html" class="text-black mx-2"><i class="fa-solid fa-star"></i></a>
+              <a href="rating.html" class="mx-2">My Rating & Reviews</a>
+            </td> 
+        </tr>
+        <tr>
+          <td  class="bg-slate-600">
+            <a href="payment.html" class="text-black mx-2"><i class="fa-solid fa-wallet"></i></a>
+            <a href="payment.html" class="mx-2">Payment</a>
+          </td>
+        </tr> 
+        
+      </table>
+    </div>
+  </div>
+
+  <div class="inline-block w-full md:w-2/4 relative md:float-right bg-slate-500 mt-10 mr-10">
+    <div class="inline-block w-full border-b-2 border-black">
+        <div class="p-10 pl-3 pb-3">
+            <h1 class="anta-regular decoration-solid" style="font-weight: bold; font-size: large;">Payment Information</h1>
+            <p class="text-xs">Choose a way to pay for your order.</p>
+        </div>
+    </div>
+    
+    <div class="p-5">
+        <form>
+            <div class="flex items-center mb-4 p-3 bg-slate-200 rounded-xl">
+                <input type="radio" id="cod" name="payment_method" value="COD" class="mr-2">
+                <i class="fa-solid fa-money-bills p-2"></i>
+                <label for="cod">Cash on Delivery (COD)</label>
+            </div>
+            <div class="flex items-center mb-4 p-3 bg-slate-200 rounded-xl">
+                <input type="radio" id="gcash" name="payment_method" value="GCash" class="mr-2">
+                <div class="p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 100 100">
+                        <path d="M 43 14 C 23.158623 14 7 30.158623 7 50 C 7 69.841377 23.158623 86 43 86 C 51.060131 86 58.705597 83.380252 65.068359 78.435547 C 67.239949 76.748053 67.633291 73.589271 65.947266 71.417969 C 64.261706 69.246908 61.103484 68.850128 58.931641 70.539062 C 54.327496 74.117279 48.832876 76 43 76 C 28.654361 76 17 64.345639 17 50 C 17 35.654361 28.654361 24 43 24 C 48.832876 24 54.327526 25.883734 58.931641 29.462891 C 61.102894 31.15109 64.26156 30.75328 65.947266 28.582031 C 67.635318 26.410966 67.239365 23.251215 65.068359 21.564453 C 58.705556 16.619716 51.059159 14 43 14 z M 43 16 C 50.626841 16 57.818647 18.465268 63.839844 23.144531 C 65.156838 24.16777 65.393088 26.036581 64.369141 27.353516 L 64.367188 27.355469 C 63.34494 28.672173 61.476903 28.906613 60.160156 27.882812 C 55.214271 24.037969 49.265124 22 43 22 C 27.569639 22 15 34.569639 15 50 C 15 65.430361 27.569639 78 43 78 C 49.265124 78 55.214301 75.960971 60.160156 72.117188 C 61.478313 71.092122 63.344746 71.327592 64.367188 72.644531 C 65.391161 73.963229 65.158254 75.830962 63.839844 76.855469 C 57.818606 81.534764 50.627869 84 43 84 C 24.243377 84 9 68.756623 9 50 C 9 31.243377 24.243377 16 43 16 z M 82.189453 25.998047 C 81.563233 25.998047 80.941132 26.148176 80.371094 26.439453 C 78.411676 27.441972 77.630256 29.862773 78.632812 31.822266 C 81.532591 37.491407 83 43.601602 83 50 C 83 56.400473 81.532561 62.50964 78.632812 68.177734 C 78.146552 69.126341 78.059863 70.218014 78.386719 71.230469 C 78.714562 72.243596 79.423648 73.075437 80.371094 73.560547 C 80.93947 73.851556 81.556115 74.001953 82.189453 74.001953 C 83.69502 74.001953 85.069567 73.163486 85.753906 71.822266 L 85.753906 71.820312 C 89.234649 65.020884 91 57.673995 91 50 C 91 42.328371 89.235048 34.980538 85.755859 28.177734 C 85.270792 27.229234 84.435988 26.521154 83.421875 26.193359 C 83.018972 26.063611 82.603939 25.998047 82.189453 25.998047 z M 82.189453 26.998047 C 82.498967 26.998047 82.810138 27.046277 83.115234 27.144531 C 83.883121 27.392737 84.498302 27.915313 84.865234 28.632812 C 88.274046 35.298009 90 42.481629 90 50 C 90 57.521401 88.273995 64.703158 84.863281 71.365234 L 84.863281 71.367188 C 84.347391 72.379192 83.327389 73.001953 82.189453 73.001953 C 81.710791 73.001953 81.257796 72.892866 80.826172 72.671875 C 80.109617 72.304985 79.586047 71.688747 79.337891 70.921875 C 79.090746 70.15633 79.155697 69.352159 79.523438 68.634766 L 79.523438 68.632812 C 82.493689 62.826907 84 56.553527 84 50 C 84 43.448398 82.491706 37.174045 79.521484 31.367188 C 78.766042 29.89068 79.34959 28.085559 80.826172 27.330078 C 81.258134 27.109355 81.721673 26.998047 82.189453 26.998047 z M 43 29 C 31.424828 29 22 38.424828 22 50 C 22 61.575172 31.424828 71 43 71 C 54.575172 71 64 61.575172 64 50 C 64 47.798843 62.201157 46 60 46 L 48 46 C 45.798843 46 44 47.798843 44 50 C 44 52.201157 45.798843 54 48 54 L 55.369141 54 C 53.623758 59.387459 48.658785 63 43 63 C 35.82718 63 30 57.17282 30 50 C 30 42.82718 35.82718 37 43 37 C 45.755221 37 48.392658 37.864469 50.642578 39.505859 L 50.642578 39.503906 C 51.503111 40.131924 52.568046 40.389458 53.617188 40.226562 C 54.669756 40.062526 55.603047 39.490576 56.230469 38.630859 C 57.528145 36.851971 57.136312 34.340646 55.357422 33.042969 C 51.736037 30.400162 47.458425 29 43 29 z M 43 30 C 47.249575 30 51.312963 31.328463 54.767578 33.849609 C 56.108688 34.827932 56.402152 36.701857 55.423828 38.042969 C 54.94925 38.693252 54.258322 39.114318 53.462891 39.238281 C 52.670031 39.361385 51.881889 39.171251 51.232422 38.697266 C 48.816342 36.934656 45.964779 36 43 36 C 35.28482 36 29 42.28482 29 50 C 29 57.71518 35.28482 64 43 64 C 49.084619 64 54.443197 60.10215 56.320312 54.310547 L 56.320312 54.308594 C 56.420709 54.001248 56.364162 53.669951 56.179688 53.414062 C 55.99174 53.15341 55.689557 53 55.369141 53 L 48 53 C 46.341157 53 45 51.658843 45 50 C 45 48.341157 46.341157 47 48 47 L 60 47 C 61.658843 47 63 48.341157 63 50 C 63 61.032828 54.032828 70 43 70 C 31.967172 70 23 61.032828 23 50 C 23 38.967172 31.967172 30 43 30 z M 71.142578 32.998047 C 70.569057 32.998047 69.996891 33.124019 69.462891 33.371094 L 69.460938 33.371094 C 67.463852 34.296072 66.586643 36.684345 67.511719 38.681641 C 69.162877 42.250045 70 46.053783 70 50 C 70 53.946217 69.162858 57.750866 67.511719 61.320312 C 66.586643 63.317608 67.463848 65.705882 69.460938 66.630859 L 69.462891 66.630859 C 69.992327 66.875127 70.55915 67.001953 71.138672 67.001953 C 72.694015 67.001953 74.118338 66.091215 74.771484 64.679688 C 76.913359 60.053055 78 55.110767 78 50 C 78 44.889233 76.91444 39.946988 74.771484 35.320312 C 74.325234 34.353817 73.521484 33.613013 72.523438 33.246094 L 72.521484 33.246094 C 72.072757 33.079644 71.606234 32.998047 71.142578 32.998047 z M 71.142578 33.998047 C 71.490286 33.998047 71.839074 34.058507 72.175781 34.183594 C 72.930993 34.460878 73.52577 35.009248 73.863281 35.740234 C 75.946326 40.23756 77 45.030767 77 50 C 77 54.969233 75.947313 59.762398 73.865234 64.259766 L 73.863281 64.259766 C 73.374428 65.316237 72.303329 66.001953 71.138672 66.001953 C 70.70284 66.001953 70.284829 65.907833 69.882812 65.722656 C 68.377899 65.025634 67.722997 63.244939 68.419922 61.740234 C 70.13083 58.041681 71 54.087783 71 50 C 71 45.912217 70.130811 41.959315 68.419922 38.261719 C 67.722997 36.757015 68.377903 34.974366 69.882812 34.277344 C 70.286812 34.090419 70.7141 33.998047 71.142578 33.998047 z M 43 40 C 37.482814 40 33 44.482814 33 50 C 33 53.804475 35.130732 57.118053 38.263672 58.806641 A 0.50005 0.50005 0 1 0 38.736328 57.927734 C 35.917268 56.408322 34 53.431525 34 50 C 34 45.023186 38.023186 41 43 41 C 44.945275 41 46.736321 41.621135 48.208984 42.669922 A 0.50052346 0.50052346 0 0 0 48.791016 41.855469 C 47.157679 40.692255 45.158725 40 43 40 z M 48.818359 56.996094 A 0.50005 0.50005 0 0 0 48.509766 57.105469 C 48.119007 57.409182 47.701499 57.679557 47.261719 57.917969 A 0.50005 0.50005 0 1 0 47.738281 58.796875 C 48.224501 58.533287 48.687806 58.232818 49.123047 57.894531 A 0.50005 0.50005 0 0 0 48.818359 56.996094 z M 45.5 58.658203 A 0.50005 0.50005 0 0 0 45.367188 58.677734 C 44.610953 58.885534 43.820479 59 43 59 C 42.521854 59 42.050255 58.95211 41.578125 58.876953 A 0.50005 0.50005 0 1 0 41.421875 59.863281 C 41.929745 59.944126 42.454146 60 43 60 C 43.913521 60 44.795048 59.87278 45.632812 59.642578 A 0.50005 0.50005 0 0 0 45.5 58.658203 z"></path>
+                    </svg>
+                </div>
+                <label for="gcash">GCash</label>
+            </div>
+            <div class="flex items-center mb-4 p-3 bg-slate-200 rounded-xl">
+                <input type="radio" id="paypal" name="payment_method" value="PayPal" class="mr-2">
+                <div class="p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                        <path d="M 11.40625 2 C 10.40625 2 9.511719 2.6875 9.3125 3.6875 C 9.3125 3.6875 3.414063 30.695313 2.3125 36.09375 C 2.113281 37.195313 2.386719 37.789063 2.6875 38.1875 C 3.085938 38.6875 3.699219 39 4.5 39 L 12 39 L 17.90625 11.8125 C 18.105469 10.8125 19.011719 9 21.8125 9 L 38 9 C 36.601563 4.398438 32.105469 2 27.90625 2 Z M 22 11.09375 L 20.40625 11.40625 C 20.105469 11.605469 19.914063 12.011719 19.8125 12.3125 L 17.40625 23.5 C 18.105469 23.199219 18.792969 23.09375 19.59375 23.09375 L 26.8125 23.09375 C 33.210938 23.09375 36.800781 20.507813 38 14.90625 C 38.199219 13.90625 38.3125 13.113281 38.3125 12.3125 L 38.1875 11.1875 L 38.1875 11.09375 Z M 40.09375 11.3125 L 40.1875 12 C 40.289063 13 40.105469 13.894531 39.90625 15.09375 C 38.507813 21.59375 33.988281 24.90625 26.6875 24.90625 L 19.5 24.90625 C 17.898438 24.90625 16.800781 25.605469 16.5 26.90625 C 16.101563 28.707031 12.601563 45.199219 12.5 45.5 C 12.398438 46 12.507813 46.6875 12.90625 47.1875 C 13.207031 47.585938 13.6875 48 14.6875 48 L 22.6875 48 C 23.6875 48 24.613281 47.289063 24.8125 46.1875 C 25.710938 42.386719 26.898438 36.613281 27 36.3125 C 27 36.210938 27.09375 36 27.09375 36 L 32.40625 36 C 40.207031 36 46.101563 31.3125 47.5 23.8125 C 48.5 19.210938 47.207031 16.289063 45.90625 14.6875 C 44.105469 12.386719 40.792969 11.3125 40.09375 11.3125 Z"></path>
+                    </svg>
+                </div>
+                <label for="paypal">PayPal</label>
+            </div>
+            <div class="flex items-center mb-4 p-3 bg-slate-200 rounded-xl">
+                <input type="radio" id="paymaya" name="payment_method" value="PayMaya" class="mr-2">
+                <div class="p-1">
+                    <img width="30" height="30" src="https://img.icons8.com/sf-black-filled/64/m.png" alt="m"/>
+                </div>
+                <label for="paymaya">PayMaya</label>
+            </div>
+            <div class="flex items-center mb-4 p-3 bg-slate-200 rounded-xl">
+                <input type="radio" id="credit_card" name="payment_method" value="Credit Card" class="mr-2">
+                <div class="p-1">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/credit-card-front.png" alt="credit-card-front"/>
+                </div>
+                <label for="credit_card">Credit Card or Debit Card</label>
+            </div>
+            <div class="flex items-center mb-4 p-3 rounded-xl float-right">
+                <input type="submit" value="Submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-10 rounded">
+              </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="inline-block text-center py-10 hover:invert bg-white w-full" id="contacts">
+  <a class="mx-6" href="#!"><i class="fab fa-twitter"></i></a>
+  <a class="mx-6" href="#!"><i class="fab fa-facebook-f"></i></a>
+  <a class="mx-6" href="#!"><i class="fab fa-instagram"></i></a>
+  <div class="mx-6 my-5">Copyright &copy; Reserved 2024</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Moirai+One&family=Nunito:ital,wght@0,300;0,500;1,400&family=Protest+Guerrilla&family=Protest+Riot&family=Rock+3D&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+<body class="bg-gradient-to-b from-slate-950 to-slate-700 flex items-center justify-center min-h-screen m-10">
+    <div class="bg-gradient-to-b from-slate-700 to-slate-950  shadow-md rounded-md p-6 w-full max-w-lg">
+        <h2 class="text-3xl mb-4 anta-regular">Enter Your Address</h2>
+        <form method="POST" action="" enctype="multipart/form-data">
+        <label class="block mb-6">
+          <span class="">Barangay</span>
+          <input name="address2" type="text" class=" block w-full mt-1 rounded-full shadow-full focus:invert p-2 hover:invert" placeholder=""/>
+        </label>
+        <label class="block mb-6">
+          <span class="">City</span>
+          <input name="city" type="text" class=" block w-full mt-1 rounded-full shadow-full focus:invert p-2 hover:invert" placeholder=""/>
+        </label>
+        <label class="block mb-6">
+          <span class="">State/Province</span>
+          <input name="state" type="text" class=" block w-full mt-1 rounded-full shadow-lg focus:invert p-2 hover:invert" placeholder=""/>
+        </label>
+        <label class="block mb-6">
+          <span class="">Zip/Postal code</span>
+          <input name="zip" type="text" class=" block w-full mt-1 rounded-full shadow-lg focus:invert p-2 hover:invert" placeholder=""/>
+        </label>
+        <label class="block mb-6">
+          <span class="">Country</span>
+          <input name="country" type="text" class="block w-full mt-1 rounded-fullshadow-lg focus:invert p-2 hover:invert" placeholder=""/>
+        </label>
+        <label class="block mb-6">
+          <span class="">Noticable Landmarks</span>
+          <textarea class="block w-full mt-1 pl-2 rounded-md shadow-sm focus:invert hover:invert" rows="3" placeholder="Street, School, Office, etc."></textarea>
+        </label>
+        <div class="mb-6">
+          <button type="submit" class=" h-10 px-20 bg-black rounded-lg transition-colors duration-150 focus:shadow-outline hover:invert text-white">
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+
+</body>
+<script src="ad.js"></script>
+</html>

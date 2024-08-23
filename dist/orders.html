@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders | 3J's</title>
+
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Moirai+One&family=Nunito:ital,wght@0,300;0,500;1,400&family=Protest+Guerrilla&family=Protest+Riot&family=Rock+3D&display=swap"
+      rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <div class="navbar bg-gray-900 pb-2 flex flex-col md:flex-row items-center justify-between">
+    <nav class="m-10 mb-7">
+      <img class="w-16 cursor-pointer rounded-full hover:invert sepia md:filter-none" src="favicon.png" alt="...">
+    </nav>
+  
+    <div class="flex items-center justify-center p-2 md:p-0 anta-regular">
+      <a href="dashboard.html" class="text-white font-normal mb-2 md:mb-0 px-5 py-2 hover:invert">Home</a>
+      <a href="products.html" class="text-white font-normal mb-2 md:mb-0 px-5 py-2 hover:invert">Products</a>
+      <a href="#contacts" class="text-white font-normal mb-2 md:mb-0 px-5 py-2 hover:invert">Contacts</a>
+      <a href="about.html" class="text-white font-normal mb-2 md:mb-0 px-5 py-2 hover:invert">About</a>
+      <a href="cart.html" class="text-white mb-2 md:mb-0 px-5 py-2 hover:invert">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      <a href="profile.html" class="text-white mb-4 px-5 py-2 hover:invert">
+        <i class="fas fa-user"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="mr-0 pr- 0 mt-8 pl-4 md:px-0 md:pl-36 md:justify-center bg-white anta-regular inline-block">
+    <div class="mx-6 my-5 text-4xl">Profile</div>
+    <div class="flex flex-col md:flex-row items-center">
+      <a class="mx-auto md:mx-10 p-3.5 size-16 text-4xl border-2 border-black rounded-full" href="#!"><i class="fa-regular fa-user user"></i></a>
+      <div class="md:inline-block">
+        <p>Hello</p>
+        <h4>[Full Name]</h4>
+      </div>
+    </div>
+    <div class="myMenu md:m-10 bg-slate-500 inline-flex">
+      <table class="w-full">
+        <tr> 
+          <td>
+            <a href="profile.html" class="text-black mx-2"><i class="fa-solid fa-user user"></i></a>
+            <a href="profile.html" class="mx-2">My Account</a>
+          </td>
+        </tr>
+        <tr class="bg-slate-600">
+          <td>
+            <a href="orders.html" class="text-black mx-2"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="orders.html" class="mx-2">My Order</a>
+          </td> 
+        </tr>
+        <tr>
+          <td>
+            <a href="rating.html" class="text-black mx-2"><i class="fa-solid fa-star"></i></a>
+            <a href="rating.html" class="mx-2">My Rating & Reviews</a>
+          </td> 
+        </tr>
+        <tr>
+          <td>
+            <a href="payment.html" class="text-black mx-2"><i class="fa-solid fa-wallet"></i></a>
+            <a href="payment.html" class="mx-2">Payment</a>
+          </td>
+        </tr> 
+      </table>
+    </div>
+  </div>
+
+  <div class="md:inline-block md:float-right bg-slate-500 mt-10 md:w-2/4 md:mt-10 md:mr-10 md:pl-0 md:ml-0 mb-10">
+    <div class="inline-block w-full border-b-2 border-black">
+      <div class="p-10 pl-3 pb-3">
+        <h1 class= "anta-regular decoration-solid" style="font-weight: bold; font-size: large;">My Orders</h1>
+      </div>
+    </div>
+    <div class="my-10 mx-5">
+      <div class="inline-block w-full p-3 rounded-lg bg-slate-200 mb-5">
+        <div>
+          <div class="float-start" style="font-weight: bold;">
+            <h1>Order ID: #2013664. <mark style="color: aqua;" class="bg-transparent">On the Way</mark></h1>
+          </div>
+          <br>
+          <div class="inline-block font-extralight text-xs">
+            <p>Placed on: (Month Day, Year)    |   Arrive in: (Month/Day/Year)</p>
+          </div>
+          <div class="relative">
+            <table class="float-right w-1/2">
+              <tr class="text-xs">
+                <td>
+                  Shipping Method
+                </td>
+                <td>
+                  Price
+                </td>
+                <td>
+                  Qty
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>
+                  Standard
+                </td>
+                <td>
+                  $1500
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="flex items-center mb-3">
+            <img src="product.jpg" alt="Product Photo" class="w-20 h-20 object-cover bg-white mr-3">
+            <div>
+              <h2 class="font-semibold text-base">Fender 1959 Stratocaster</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="inline-block w-full p-3 rounded-lg bg-slate-200 my-5">
+        <div>
+          <div class="float-start" style="font-weight: bold;">
+            <h1>Order ID: #2013664. <mark style="color: aqua;" class="bg-transparent">On the Way</mark></h1>
+          </div>
+          <br>
+          <div class="inline-block font-extralight text-xs">
+            <p>Placed on: (Month Day, Year)    |   Arrive in: (Month/Day/Year)</p>
+          </div>
+          <div class="relative">
+            <table class="float-right w-1/2">
+              <tr class="text-xs">
+                <td>
+                  Shipping Method
+                </td>
+                <td>
+                  Price
+                </td>
+                <td>
+                  Qty
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>
+                  Standard
+                </td>
+                <td>
+                  $1500
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="flex items-center mb-3">
+            <img src="product.jpg" alt="Product Photo" class="w-20 h-20 object-cover bg-white mr-3">
+            <div>
+              <h2 class="font-semibold text-base">Fender 1959 Stratocaster</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inline-block w-full p-3 rounded-lg bg-slate-200 my-5">
+        <div>
+          <div class="float-start" style="font-weight: bold;">
+            <h1>Order ID: #2013664. <mark style="color: aqua;" class="bg-transparent">On the Way</mark></h1>
+          </div>
+          <br>
+          <div class="inline-block font-extralight text-xs">
+            <p>Placed on: (Month Day, Year)    |   Arrive in: (Month/Day/Year)</p>
+          </div>
+          <div class="relative">
+            <table class="float-right w-1/2">
+              <tr class="text-xs">
+                <td>
+                  Shipping Method
+                </td>
+                <td>
+                  Price
+                </td>
+                <td>
+                  Qty
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>
+                  Standard
+                </td>
+                <td>
+                  $1500
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="flex items-center mb-3">
+            <img src="product.jpg" alt="Product Photo" class="w-20 h-20 object-cover bg-white mr-3">
+            <div>
+              <h2 class="font-semibold text-base">Fender 1959 Stratocaster</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inline-block w-full p-3 rounded-lg bg-slate-200 my-5">
+        <div>
+          <div class="float-start" style="font-weight: bold;">
+            <h1>Order ID: #2013664. <mark style="color: aqua;" class="bg-transparent">On the Way</mark></h1>
+          </div>
+          <br>
+          <div class="inline-block font-extralight text-xs">
+            <p>Placed on: (Month Day, Year)    |   Arrive in: (Month/Day/Year)</p>
+          </div>
+          <div class="relative">
+            <table class="float-right w-1/2">
+              <tr class="text-xs">
+                <td>
+                  Shipping Method
+                </td>
+                <td>
+                  Price
+                </td>
+                <td>
+                  Qty
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>
+                  Standard
+                </td>
+                <td>
+                  $1500
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="flex items-center mb-3">
+            <img src="product.jpg" alt="Product Photo" class="w-20 h-20 object-cover bg-white mr-3">
+            <div>
+              <h2 class="font-semibold text-base">Fender 1959 Stratocaster</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inline-block w-full p-3 rounded-lg bg-slate-200 my-5">
+        <div>
+          <div class="float-start" style="font-weight: bold;">
+            <h1>Order ID: #2013664. <mark style="color: aqua;" class="bg-transparent">On the Way</mark></h1>
+          </div>
+          <br>
+          <div class="inline-block font-extralight text-xs">
+            <p>Placed on: (Month Day, Year)    |   Arrive in: (Month/Day/Year)</p>
+          </div>
+          <div class="relative">
+            <table class="float-right w-1/2">
+              <tr class="text-xs">
+                <td>
+                  Shipping Method
+                </td>
+                <td>
+                  Price
+                </td>
+                <td>
+                  Qty
+                </td>
+              </tr>
+
+              <tr class="">
+                <td>
+                  Standard
+                </td>
+                <td>
+                  $1500
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="flex items-center mb-3">
+            <img src="product.jpg" alt="Product Photo" class="w-20 h-20 object-cover bg-white mr-3">
+            <div>
+              <h2 class="font-semibold text-base">Fender 1959 Stratocaster</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <div class="inline-block text-center py-10 hover:invert bg-white w-full" id="contacts">
+    <a class="mx-6" href="#!"><i class="fab fa-twitter"></i></a>
+    <a class="mx-6" href="#!"><i class="fab fa-facebook-f"></i></a>
+    <a class="mx-6" href="#!"><i class="fab fa-instagram"></i></a>
+    <div class="mx-6 my-5">Copyright &copy; Reserved 2024</div>
+  </div>
+
+</body>
+</html>
